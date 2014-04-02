@@ -1,7 +1,7 @@
 body {
 	background-color: #FFF;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 300%;
+	font-size: 2.5em;
 	font-weight: 700;
 	color: #fff;
 }
@@ -12,10 +12,15 @@ h1 	{
 }
 
 
+.h1 {
+	font-family: "Josefin Sans", Helvetica, sans-serif; 
+	font-weight: 700;
+}
+
 h1.title {
 
 	font-family: "Josefin Sans";
-	font-size: 300%;
+	font-size: 2em;
 	color: #c9fe9b;
 }
 
@@ -91,6 +96,7 @@ a.link {
 .video {
 	background-image: url(/images/bg.png);
 	color: #fff;
+	background-attachment: fixed;
 }
 
 .summary {
@@ -99,54 +105,6 @@ a.link {
 }
 
 
-.textfield {
-	width: 50%;
-	height:50px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
-	outline:0px;
-	border: none;
-	font-size: 100%;
-	font-weight: 500;
-	color: #000;
-	background-color: #fff7f7;
-	border-color: #c9fe9b;
-	margin-right:25px;
-	padding-left: 15px;
-
-}
-
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #5c5c5c;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #5c5c5c;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #5c5c5c;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #5c5c5c;
-}
-
-
-.textfieldphone {
-	width: 50%;
-	height:50%;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
-	outline:0px;
-	border: none;
-	font-size: 100%;
-	font-weight: 500;
-	color: #676767;
-	background-color: #321b3c;
-	border-color: #c9fe9b;
-	margin-right:25px;
-	padding-left: 15px;	
-}
 
 
 /*.textfield {
@@ -188,81 +146,37 @@ a:hover {
 }
 
 
+.textfield {
+	width: 50%;
+	height:50px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	outline:0px;
+	border: none;
+	font-size: 100%;
+	font-weight: 500;
+	color: #f1f1f1;
+	background-color: #5b4a89;
+	border-color: #FFF;
+	margin-right:25px;
+	padding-left: 15px;
+}
+
+
 .subscribe {
-	
-	background-color:#d31da4;
-	-webkit-border-top-left-radius:26px;
-	-moz-border-radius-topleft:26px;
-	border-top-left-radius:26px;
-	-webkit-border-top-right-radius:26px;
-	-moz-border-radius-topright:26px;
-	border-top-right-radius:26px;
-	-webkit-border-bottom-right-radius:26px;
-	-moz-border-radius-bottomright:26px;
-	border-bottom-right-radius:26px;
-	-webkit-border-bottom-left-radius:26px;
-	-moz-border-radius-bottomleft:26px;
-	border-bottom-left-radius:26px;
-	text-indent:0;
-	border:0px solid #dcdcdc;
-	display:inline-block;
-	color:#FFF;
-	font-family:"Josefin Sans";
-	font-size:24px;
-	font-weight:700;
-	font-style:normal;
-	height:55px;
-	line-height:50px;
-	text-decoration:none;
-	text-align:center;
-}
-.subscribe:hover {
-
-	background-color:#831265;
-
-}.subscribe:active {
-	position:relative;
-	top:1px;
-}
-
-.subscribephone {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #100e14), color-stop(1, #100e14) );
-	background:-moz-linear-gradient( center top, #100e14 5%, #100e14 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#100e14', endColorstr='#100e14');
-	background-color:#d31da4;
-	-webkit-border-top-left-radius:26px;
-	-moz-border-radius-topleft:26px;
-	border-top-left-radius:26px;
-	-webkit-border-top-right-radius:26px;
-	-moz-border-radius-topright:26px;
-	border-top-right-radius:26px;
-	-webkit-border-bottom-right-radius:26px;
-	-moz-border-radius-bottomright:26px;
-	border-bottom-right-radius:26px;
-	-webkit-border-bottom-left-radius:26px;
-	-moz-border-radius-bottomleft:26px;
-	border-bottom-left-radius:26px;
-	
-	border:0px solid #dcdcdc;
-	
-	color:#c9fe9b;
-	font-family:"Bariol Big";
-	font-size:18px;
-	font-weight:normal;
-	font-style:normal;
-	margin-right: 20px;
-	margin-top: 5px;
-	line-height:30px;
-	width:40%;
-	text-decoration:none;
-	text-align:center;
-}
-.subscribephone:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #030103), color-stop(1, #000000) );
-	background:-moz-linear-gradient( center top, #030103 5%, #000000 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#030103', endColorstr='#000000');
-	background-color:#030103;
-}.subscribephone:active {
-	position:relative;
-	top:1px;
+	width: 50%;
+	height: 50px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	outline:0px;
+	border: none;
+	font-size: 100%;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: #fec71a;
+	border-color: #FFF;
+	margin-right:25px;
+	padding-left: 15px;
 }
