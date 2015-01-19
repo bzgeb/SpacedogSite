@@ -9,6 +9,9 @@ try {
 var express = require('express')
   , MailChimpAPI = require('mailchimp').MailChimpAPI;
 
+var bodyParser = require('body-parser');
+var multer = require('multer'); 
+
 var mc_api_key = process.env.MC_API_KEY;
 var mc_newsletter_id = process.env.MC_NEWSLETTER_ID;
 
@@ -29,6 +32,10 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname);
 app.listen( port );
 app.engine('html', require('ejs').renderFile);
+
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(multer()); // for parsing multipart/form-data
 
 /**
  * App routes.
